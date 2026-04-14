@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Satarupa Bhowmik, a B.Tech CSE student, AIML enthusiast, and full-stack developer."
+    />
+    <title>Satar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Satarupa Bhowmik home">S.</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" data-menu>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="particle-scene" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal-on-load">Portfolio</p>
+        <h1 id="hero-title" class="hero-title" aria-label="Satarupa Bhowmik">
+          <span class="hero-name" data-hero-name>Satarupa Bhowmik</span>
+        </h1>
+        <p class="hero-tagline reveal-on-load">
+          B.Tech CSE Student | AIML Enthusiast | Full-Stack Developer
+        </p>
+        <div class="hero-actions reveal-on-load">
+          <a class="button button-primary" href="#projects">Explore Work</a>
+          <a class="button button-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+        <span></span>
+        Explore
+      </a>
+    </section>
+
+    <main id="main">
+      <section class="section about-section" id="about">
+        <div class="section-inner about-layout">
+          <div class="section-copy" data-reveal>
+            <p class="section-kicker">About</p>
+            <h2>Building practical systems with clean thinking.</h2>
+            <p>
+              I am a B.Tech Computer Science student with a strong interest in
+              artificial intelligence, machine learning, full-stack development,
+              and solving real problems through technology.
+            </p>
+            <p>
+              My work combines DSA fundamentals, software development practice,
+              and a curiosity for products that can improve everyday decisions,
+              workflows, and user experiences.
+            </p>
+          </div>
+
+          <div class="profile-visual" data-reveal>
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1000&q=80"
+              alt="Developer workspace with code on a laptop"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="profile-metrics" aria-label="Profile highlights">
+              <div>
+                <strong>DSA</strong>
+                <span>Core foundation</span>
+              </div>
+              <div>
+                <strong>AIML</strong>
+                <span>Applied learning</span>
+              </div>
+              <div>
+                <strong>Full Stack</strong>
+                <span>Product mindset</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-inner">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Skills</p>
+            <h2>Technical range with problem-solving depth.</h2>
+          </div>
+
+          <div class="skills-layout">
+            <div class="skill-column" data-stagger>
+              <h3>Technical Skills</h3>
+              <article class="skill-card" data-reveal style="--level: 88%">
+                <div>
+                  <span>Python</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="skill-meter"><span></span></div>
+              </article>
+              <article class="skill-card" data-reveal style="--level: 84%">
+                <div>
+                  <span>C++</span>
+                  <strong>84%</strong>
+                </div>
+                <div class="skill-meter"><span></span></div>
+              </article>
+              <article class="skill-card" data-reveal style="--level: 78%">
+                <div>
+                  <span>Java</span>
+                  <strong>78%</strong>
+                </div>
+                <div class="skill-meter"><span></span></div>
+              </article>
+              <article class="skill-card" data-reveal style="--level: 80%">
+                <div>
+                  <span>SQL</span>
+                  <strong>80%</strong>
+                </div>
+                <div class="skill-meter"><span></span></div>
+              </article>
+            </div>
+
+            <div class="skill-column" data-stagger>
+              <h3>Professional Skills</h3>
+              <div class="tag-grid">
+                <span data-reveal>Communication</span>
+                <span data-reveal>Problem Solving</span>
+                <span data-reveal>Teamwork</span>
+                <span data-reveal>Innovation</span>
+                <span data-reveal>Decision Making</span>
+              </div>
+            </div>
+
+            <div class="skill-column" data-stagger>
+              <h3>Domain Knowledge</h3>
+              <div class="domain-list">
+                <article data-reveal>
+                  <span>01</span>
+                  <p>Data Analytics</p>
+                </article>
+                <article data-reveal>
+                  <span>02</span>
+                  <p>Machine Learning</p>
+                </article>
+                <article data-reveal>
+                  <span>03</span>
+                  <p>Software Development</p>
+                </article>
+                <article data-reveal>
+                  <span>04</span>
+                  <p>Algorithms &amp; Data Structures</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-inner">
+          <div class="section-heading split-heading" data-reveal>
+            <div>
+              <p class="section-kicker">Projects</p>
+              <h2>Focused builds with real-world intent.</h2>
+            </div>
+            <p>
+              Practical systems shaped around location intelligence, operations,
+              role-based workflows, and clear user journeys.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-reveal data-tilt>
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?auto=format&fit=crop&w=1000&q=80"
+                  alt="City traffic seen from above"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-label">Project 01</p>
+                <h3>Smart Traffic Management System</h3>
+                <p>
+                  Location-based parking system with real-time data fetching and
+                  a dynamic UI for smoother traffic and parking decisions.
+                </p>
+                <div class="badge-row" aria-label="Technology stack">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>Google Maps API</span>
+                </div>
+                <a href="#contact" class="project-link">View Details</a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal data-tilt>
+              <div class="project-image">
+                <img
+                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80"
+                  alt="Restaurant counter with food service activity"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-label">Project 02</p>
+                <h3>Altplate - Food Court Management System</h3>
+                <p>
+                  Role-based system for food selection, approvals, and tracking
+                  across a more organized food court workflow.
+                </p>
+                <div class="badge-row" aria-label="Technology stack">
+                  <span>Full Stack</span>
+                  <span>Web Development</span>
+                  <span>Role Based</span>
+                </div>
+                <a href="#contact" class="project-link">View Details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="section-inner education-layout">
+          <div class="section-copy" data-reveal>
+            <p class="section-kicker">Education</p>
+            <h2>Computer science foundation with consistent growth.</h2>
+          </div>
+
+          <article class="timeline-card" data-reveal>
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <p class="timeline-duration">2022 - 2026</p>
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>Your University</p>
+            <div class="sgpa-pill">
+              <span>SGPA</span>
+              <strong>8.04</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section certifications-section" id="certifications">
+        <div class="section-inner">
+          <div class="section-heading" data-reveal>
+            <p class="section-kicker">Certifications</p>
+            <h2>Verified learning across programming, security, and cloud.</h2>
+          </div>
+
+          <div class="cert-grid" data-stagger>
+            <article class="cert-card" data-reveal>
+              <span>HR</span>
+              <h3>HackerRank</h3>
+              <p>5-Star in C</p>
+            </article>
+            <article class="cert-card" data-reveal>
+              <span>C</span>
+              <h3>C for Beginners</h3>
+              <p>Programming fundamentals</p>
+            </article>
+            <article class="cert-card" data-reveal>
+              <span>OS</span>
+              <h3>Offensive Security Introduction</h3>
+              <p>Security basics</p>
+            </article>
+            <article class="cert-card" data-reveal>
+              <span>AWS</span>
+              <h3>AWS Data Engineering</h3>
+              <p>Cloud data workflows</p>
+            </article>
+            <article class="cert-card" data-reveal>
+              <span>AWS</span>
+              <h3>AWS Machine Learning</h3>
+              <p>Cloud ML foundations</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-inner contact-layout">
+          <div class="contact-copy" data-reveal>
+            <p class="section-kicker">Contact</p>
+            <h2>Let’s build something useful.</h2>
+            <p>
+              Open to internships, collaborative projects, and opportunities
+              involving AI, software development, and data-driven products.
+            </p>
+
+            <div class="contact-list" aria-label="Contact details">
+              <a href="tel:+910000000000">
+                <span>Phone</span>
+                +91 9863710718
+              </a>
+              <a href="mailto:your.email@example.com">
+                <span>Email</span>
+                satarupabhowmik0511@gmail.com
+              </a>
+              <div>
+                <span>Location</span>
+                India
+              </div>
+            </div>
+
+            <div class="social-row" aria-label="Social links">
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub profile"
+                >GH</a
+              >
+              <a
+                href="https://www.linkedin.com/in/your-profile"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn profile"
+                >in</a
+              >
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            action="mailto:your.email@example.com"
+            method="post"
+            enctype="text/plain"
+            data-reveal
+          >
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Satarupa Bhowmik. Crafted for thoughtful engineering.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
